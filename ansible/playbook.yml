@@ -1,7 +1,7 @@
 - name: Deploy to Tomcat
   hosts: web
   become: yes
-  tests:
+  tasks:
     - name: copy WAR file to Tomcat
       copy:
         src: "/var/snap/jenkins/5042/current/workspace/Ansible/target/Ansible.war"
